@@ -1,14 +1,16 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var del = require('del');
-var runSequence = require('run-sequence');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const useref = require('gulp-useref');
+const uglify = require('gulp-uglify');
+const gulpIf = require('gulp-if');
+const cssnano = require('gulp-cssnano');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const del = require('del');
+const runSequence = require('run-sequence');
+
+
 
  // ---------------------Development Tasks-------------------- // 
 
@@ -66,13 +68,13 @@ gulp.task('sass', function(){
 
 gulp.task('build', function (callback){
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    [ 'sass', 'useref', 'images', 'fonts'],
     callback
     )
 })
 
 gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync', 'watch'],
+  runSequence(['sass',  'browserSync', 'watch'],
     callback
     )
 })
