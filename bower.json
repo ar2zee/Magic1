@@ -1,0 +1,20 @@
+{
+  "name": "magic1",
+  "description": "Magic One Website",
+  "main": "main.js",
+  "authors": [
+    "Artur Oganesyan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Magic1"
+  ],
+  "homepage": "https://github.com/ar2zee/Magic1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
