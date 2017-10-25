@@ -2,6 +2,8 @@
 @import './parallaxPosition';
 @import './preloader';
 @import './mobile-devices.scss';
+@import 'lib/bourbon/_bourbon';
+@import './letter_animatio';
 
 * {
  box-sizing: border-box;
@@ -44,4 +46,5 @@ nav{
 #sidenav-overlay{
 	z-index: 100;
 }
+
 
