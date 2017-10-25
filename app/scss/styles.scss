@@ -1,0 +1,47 @@
+@import './variable';
+@import './parallaxPosition';
+@import './preloader';
+@import './mobile-devices.scss';
+
+* {
+ box-sizing: border-box;
+}
+
+.bg-image {
+	background-image: url('../images/pink-dust.png');
+	overflow-x: hidden;
+	.main-bgimage {
+		background-color: $mainColor;
+		
+	}
+}
+
+.text-rainbow{
+ @include rainbow-shadow(10vw);
+}
+
+.parallax-image{
+	position: absolute;
+	max-height: 125px;
+}
+.scene{
+	position: relative;
+}
+
+nav{ 
+	.brand-logo {
+			padding-left: 5% ;
+	}
+	.hide-on-med-and-down{
+		padding-right: 5%;
+	}
+}
+
+.main-bgimage-2{
+	background-image: url('../images/spiration-dark.png');
+}
+
+#sidenav-overlay{
+	z-index: 100;
+}
+
