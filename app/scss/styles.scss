@@ -3,19 +3,23 @@
 @import './preloader';
 @import './mobile-devices.scss';
 @import 'lib/bourbon/_bourbon';
-@import './letter_animatio';
+
 
 * {
  box-sizing: border-box;
 }
 
-.bg-image {
-	background-image: url('../images/pink-dust.png');
+.nav-bgcolor {
+		@include linearGradient($Mred , $mainColor);
+}
+
+.bgcolor-2{
+	 @include linearGradient(#cccccc, $Mred);
+}
+
+.bgcolor {
+	 @include linearGradient($Mred , #cccccc);
 	overflow-x: hidden;
-	.main-bgimage {
-		background-color: $mainColor;
-		
-	}
 }
 
 .text-rainbow{
@@ -39,12 +43,12 @@ nav{
 	}
 }
 
-.main-bgimage-2{
-	background-image: url('../images/spiration-dark.png');
+
+
+#particles-js{
+	position: relative;
 }
 
-#sidenav-overlay{
-	z-index: 100;
-}
-
-
+// .particles-js-canvas-el{
+// 	height: 85% $Excl;
+// }
