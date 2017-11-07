@@ -13,13 +13,9 @@ $('.button-collapse').sideNav({
 // Resize page to full height of window
 $('.window-height').css('height', $(window).outerHeight() - $('nav').outerHeight()); 
  $(window).resize(function() {      
-    $('.window-height').css('height', $(window).outerHeight()- $('nav').outerHeight()); 
+    $('.window-height').css('height', $(window).outerHeight() - $('nav').outerHeight()); 
   }); 
  
-  /* PARALLAX LIBRARY*/
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
-//////////////////////////////////////////
 
 
 /*PRELOADER*/
@@ -27,11 +23,11 @@ setTimeout(function(){
 		$('body').addClass('loaded');
 	}, 600);
 ////////////////////////////////////////
-
-particlesJS.load('particles-js', 'js/particles.json', function(){
-      
-    });
+// PARTICLES INIT
+particlesJS.load('particles-js', 'js/modules/particles.json', function(){});
 ////////////////////////////////////
+
+
 });
 
 
