@@ -63,3 +63,17 @@ nav{
 	position: relative;
 }
 
+svg:hover path {
+	fill: #cfb152;
+	
+}
+svg {
+	cursor: pointer;
+}
+
+#hover-content {
+    display:none;
+}
+.col.s1.offset-s2:hover #hover-content {
+    display:block;
+}
