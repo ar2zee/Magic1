@@ -1,0 +1,32 @@
+.section3 {
+
+	.col.s3 {
+		transition: 1s;
+		border-radius: 20px;
+		height: 33.33vh;
+	
+		&:hover {
+			background-color: rgba(0,0,0,0);
+			background-color: rgba(0,0,0,0.4);
+
+		}
+	}
+
+	svg {
+
+		&:hover {
+			path {
+				fill: #cc22cc;
+			}
+		}
+	}
+
+	.row {
+		margin: 0;
+	}
+
+	.modal-content .s4 {
+		height: 60vh;
+	}
+
+}
