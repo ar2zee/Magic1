@@ -1,3 +1,4 @@
+
 #button_right, #button_left {
   cursor: pointer;
 }
@@ -52,7 +53,9 @@
   right:5%;
 }
 
-
+.left-text{
+  left:5%;
+}
 
 .top{
   background:#eee;
@@ -64,6 +67,11 @@
 .top .content-body{
   left: 5%;
   color:#222;
+}
+
+.right-text {
+  right: 5%;
+  left: unset !important;
 }
 
 .handle{
@@ -79,7 +87,7 @@
 .skewed .handle{
   top:50%;
   transform:rotate(30deg) translateY(-50%);
-  height: 200%;
+  height: 116%;
   transform-origin:top;
 }
 

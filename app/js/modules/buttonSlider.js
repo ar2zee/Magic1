@@ -14,8 +14,7 @@ $(document).ready(function(){
 		$(btnLeft).on('click', function(e){
 			$(handle).animate({'left': 2374}, 1500);
 			$(topLayer).animate({'width': 3375}, 1500, function(){
-				console.log('Hey ITS LEFT');
-				$('.bottom, .top').css('display', 'none');
+					
 			});
 			$('#closeBtn').css({'display': 'block'});
 			$('#closeBtn').animate({'opacity': 1}, 1000);
@@ -25,8 +24,7 @@ $(document).ready(function(){
 		$(btnRight).on('click', function(e){
 			$(handle).animate({'left': -334}, 1500);
 			$(topLayer).animate({'width': 666.5}, 1500, function(){
-				console.log('Hey ITS RIGHT');
-				$('.bottom, .top').css('display', 'none');
+
 			});
 			$('#closeBtn').css({'display': 'block'});
 			$('#closeBtn').animate({'opacity': 1}, 1000);
@@ -35,7 +33,6 @@ $(document).ready(function(){
 
 			$('#closeBtn').on('click', function(e){
 				$(handle).animate({'left': 51+'vw'}, 1500, function(){
-				console.log('Hey ITS CLOSING');
 				$('.bottom, .top').css('display', 'block');
 			});
 				$(topLayer).animate({'width': 100+'vw'}, 1500);
@@ -44,6 +41,7 @@ $(document).ready(function(){
 				return false;
 			});
 			
+
 
 	
 });

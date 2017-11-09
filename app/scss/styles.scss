@@ -3,10 +3,18 @@
 @import './mobile-devices.scss';
 @import 'lib/bourbon/_bourbon';
 @import './section-2-style.scss';
+@import './section-3-style.scss';
+
 
 
 * {
  box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+	margin-top: 0;
 }
 
 .nav-bgcolor {
@@ -22,14 +30,8 @@
 	overflow-x: hidden;
 }
 
-.text-rainbow{
- @include rainbow-shadow(10vw);
-}
 
-.parallax-image{
-	position: absolute;
-	max-height: 125px;
-}
+
 .scene{
 	position: relative;
 }
@@ -62,4 +64,10 @@ nav{
 #particles-js{
 	position: relative;
 }
+
+.window-height {
+	height: 100vh;
+}
+
+
 

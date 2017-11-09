@@ -197,6 +197,9 @@
 .bottom .content-body {
   right: 5%; }
 
+.left-text {
+  left: 5%; }
+
 .top {
   background: #eee;
   color: #222;
@@ -206,6 +209,10 @@
 .top .content-body {
   left: 5%;
   color: #222; }
+
+.right-text {
+  right: 5%;
+  left: unset !important; }
 
 .handle {
   position: absolute;
@@ -219,7 +226,7 @@
 .skewed .handle {
   top: 50%;
   transform: rotate(30deg) translateY(-50%);
-  height: 200%;
+  height: 116%;
   transform-origin: top; }
 
 .skewed .top {
@@ -242,8 +249,30 @@
   body {
     font-size: 75%; } }
 
+.section3 .col.s3 {
+  transition: 1s;
+  border-radius: 20px;
+  height: 33.33vh; }
+  .section3 .col.s3:hover {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.section3 svg:hover path {
+  fill: #cc22cc; }
+
+.section3 .row {
+  margin: 0; }
+
+.section3 .modal-content .s4 {
+  height: 60vh; }
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin-top: 0; }
 
 .nav-bgcolor {
   background: #8b0000;
@@ -300,20 +329,6 @@
   /* IE6-9 */
   overflow-x: hidden; }
 
-.text-rainbow {
-  margin: 0 auto;
-  padding-top: 100px;
-  font-weight: bold;
-  font-family: "League-Gothic", Courier;
-  font-size: 10vw;
-  text-transform: uppercase;
-  color: #b71c1c;
-  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
-
-.parallax-image {
-  position: absolute;
-  max-height: 125px; }
-
 .scene {
   position: relative; }
 
@@ -338,3 +353,6 @@ nav .hide-on-med-and-down {
 
 #particles-js {
   position: relative; }
+
+.window-height {
+  height: 100vh; }

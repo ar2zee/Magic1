@@ -10,11 +10,13 @@ $('.button-collapse').sideNav({
     }
   );
 
+       $('.modal').modal();
+
 // Resize page to full height of window
-$('.window-height').css('height', $(window).outerHeight() - $('nav').outerHeight()); 
- $(window).resize(function() {      
-    $('.window-height').css('height', $(window).outerHeight() - $('nav').outerHeight()); 
-  }); 
+// $('.window-height').css('height', $(window).outerHeight()); 
+//  $(window).resize(function() {      
+//     $('.window-height').css('height', $(window).outerHeight()); 
+//   }); 
  
 
 
@@ -22,10 +24,14 @@ $('.window-height').css('height', $(window).outerHeight() - $('nav').outerHeight
 setTimeout(function(){
 		$('body').addClass('loaded');
 	}, 600);
+
 ////////////////////////////////////////
+
+
 // PARTICLES INIT
 particlesJS.load('particles-js', 'js/modules/particles.json', function(){});
 ////////////////////////////////////
+ 
 
 
 });

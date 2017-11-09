@@ -43,6 +43,9 @@
 .bottom .content-body {
   right: 5%; }
 
+.left-text {
+  left: 5%; }
+
 .top {
   background: #eee;
   color: #222;
@@ -52,6 +55,10 @@
 .top .content-body {
   left: 5%;
   color: #222; }
+
+.right-text {
+  right: 5%;
+  left: unset !important; }
 
 .handle {
   position: absolute;
@@ -65,7 +72,7 @@
 .skewed .handle {
   top: 50%;
   transform: rotate(30deg) translateY(-50%);
-  height: 200%;
+  height: 116%;
   transform-origin: top; }
 
 .skewed .top {
