@@ -26,7 +26,8 @@ h1 {
 }
 
 .bgcolor {
-	 @include linearGradient($Mred , #cccccc);
+	background-image: url(../images/shutterstock_268113698.jpg);
+	background-size: cover;
 	overflow-x: hidden;
 }
 

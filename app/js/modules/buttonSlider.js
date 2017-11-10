@@ -6,6 +6,7 @@ $(document).ready(function(){
 	let delta = 0;
 	let btnLeft = document.getElementById('button_left');
 	let btnRight = document.getElementById('button_right');
+	let width = $('.skewed .top').width();
 			
 			if(wrapper.className.indexOf('skewed') != -1 ){
 						skew = 1000;
@@ -32,10 +33,11 @@ $(document).ready(function(){
 		});
 
 			$('#closeBtn').on('click', function(e){
-				$(handle).animate({'left': 51+'vw'}, 1500, function(){
+				$(handle).animate({'left': '50vw', 'top': '50%'}, 1500, function(){
 				$('.bottom, .top').css('display', 'block');
 			});
-				$(topLayer).animate({'width': 100+'vw'}, 1500);
+				// $(topLayer).animate({'width': 100+'vw'}, 1500);
+				  $('.skewed .top').animate({'width': width}, 1500);
 				$(this).css({'opacity': 0});
 				$(this).css({'display': 'none'});
 				return false;

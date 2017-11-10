@@ -11,6 +11,7 @@ $('.button-collapse').sideNav({
   );
 
        $('.modal').modal();
+       $('.parallax').parallax();
 
 // Resize page to full height of window
 // $('.window-height').css('height', $(window).outerHeight()); 

@@ -311,22 +311,8 @@ h1 {
   /* IE6-9 */ }
 
 .bgcolor {
-  background: #8b0000;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #8b0000 0%, #cccccc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8b0000), color-stop(100%, #cccccc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #8b0000 0%, #cccccc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #8b0000 0%, #cccccc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #8b0000 0%, #cccccc 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #8b0000 0%, #cccccc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
-  /* IE6-9 */
+  background-image: url(../images/shutterstock_268113698.jpg);
+  background-size: cover;
   overflow-x: hidden; }
 
 .scene {
