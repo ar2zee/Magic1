@@ -1,7 +1,7 @@
-#button_right, #button_left {
+#button_right, #button_left, #button_right2, #button_left2 {
   cursor: pointer; }
 
-#wrapper {
+#wrapper, #wrapper2 {
   position: relative;
   width: 100%;
   min-height: 55vw;

@@ -4,13 +4,19 @@
 @import 'lib/bourbon/_bourbon';
 @import './section-2-style.scss';
 @import './section-3-style.scss';
+@import './form-styles.scss';
 
+
+.section1, .section2, .section3, .section4, .section4 ,.section5{
+	opacity : 0
+}
 
 
 * {
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ outline: none;
 }
 
 h1 {
@@ -59,16 +65,48 @@ nav{
 	left: 0;
 	margin-right: auto;
 	margin-left: auto;
-	top: 50vh;
+	top: 30vh;
 }
 
 #particles-js{
 	position: relative;
 }
 
-.window-height {
+.window-height, #map {
 	height: 100vh;
 }
 
+.col.s3 img {
+	height: 70%;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.modal-trigger {
+	position: relative;
+}
+
+.hover-visible {
+    display: none;
+    position: absolute;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 2%;
+	text-align: center;
+	font-weight: 500;
+
+}
+
+a.modal-trigger:hover > span.hover-visible {
+    display: block;
+    
+}
 
 
