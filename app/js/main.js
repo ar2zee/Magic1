@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
 
+//////////////////////////////////////////////////////
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+
+
+$('#current_year').text(year);
+
 // Collapse Button for Materialize Nav
 $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
@@ -13,15 +20,25 @@ $('.button-collapse').sideNav({
 
        $('.modal').modal();
        $('.parallax').parallax();
+       $('select').material_select();
+       $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control year,
+          today: 'Today',
+          clear: 'Clear',
+          close: 'Ok',
+          closeOnSelect: false // Close upon selecting a date,
+        });
 
 
     var options = [
       {selector: '.section1', offset: ($('.section1').offset().top)/2, callback: function(el) {
         ($('.section1').animate({'opacity': 1})),600 ;
         
+        
       } },
       {selector: '.section2', offset: ($('.section2').offset().top)/2, callback: function(el) {
-      ($('.section2').animate({'opacity': 1})),600 ;
+      ($('.section2, .brand-logo').animate({'opacity': 1})),600 ;
         
       } },
       {selector: '.section3', offset: ($('.section3').offset().top)/4, callback: function(el) {
@@ -57,12 +74,14 @@ particlesJS.load('particles-js', 'js/modules/particles.json', function(){});
  
 });
 
+
+
 function initMap() {
         // Create a map object and specify the DOM element for display.
           
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 29.817402, lng: -95.5413744},
-           zoom: 3,
+          center: {lat: 30.0332195, lng: -90.0226464},
+           zoom: 11,
           styles: [
             {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
           {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
@@ -177,29 +196,13 @@ function initMap() {
 
         var layer = new google.maps.FusionTablesLayer({
     query: {
-            select: 'geometry',
-            from: '1ertEwm-1bMBhpEwHhtNYT47HQ9k2ki_6sRa-UQ'
-          },
-          styles: [{
-            polygonOptions: {
-              fillColor: '#00FF00',
-              fillOpacity: 0.3
-            }
-          }, {
-            where: 'birds > 300',
-            polygonOptions: {
-              fillColor: '#0000FF'
-            }
-          }, {
-            where: 'population > 5',
-            polygonOptions: {
-              fillOpacity: 1.0
-            }
-          }]
-    
-  });
+      select: 'geometry',
+      from: '1jjsMkSQcq_sGfa59ilVKXGHWIQkyDw4xG-vojYT4'
+    }
 
+  });
   layer.setMap(map);
+
 
        
        

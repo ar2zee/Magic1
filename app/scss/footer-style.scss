@@ -1,0 +1,50 @@
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  animation: pulse 1s ease infinite, 
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1.4); }
+  75% { transform: scale(1.8); }
+  100% { transform: scale(1); }
+}
+
+footer a {
+  color: #000;
+}
+
+// explosion container
+.explosion {
+  position: absolute; // required if positioned on click else 'relative'
+  width: 600px;
+  height: 600px;
+  pointer-events: none; // make it clickable trhough
+  
+  // particle styling
+  .particle {
+    position: absolute; // required  
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: pop 1s reverse forwards; // required
+    z-index: 10000;
+  }
+}
+
+// animation for particle fly away from the cursor
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+}
+

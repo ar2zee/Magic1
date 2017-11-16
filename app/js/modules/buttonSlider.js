@@ -27,6 +27,8 @@ $(document).ready(function(){
 		$(btnLeft).on('click', function(e){
 			$(handle).animate({'left': 2374}, 1500);
 			$(topLayer).animate({'width': 3375}, 1500, function(){
+					$('.right-text').css({'display': 'block', 'top': '40%'});
+					$('.right-text ').addClass('animated slideInLeft');
 					
 			});
 			$('#closeBtn').css({'display': 'block'});
@@ -37,7 +39,8 @@ $(document).ready(function(){
 		$(btnRight).on('click', function(e){
 			$(handle).animate({'left': -334}, 1500);
 			$(topLayer).animate({'width': 666.5}, 1500, function(){
-
+				$('.left-text').css({'display': 'block', 'top': '40%'});
+				$('.left-text ').addClass('animated slideInRight');
 			});
 			$('#closeBtn').css({'display': 'block'});
 			$('#closeBtn').animate({'opacity': 1}, 1000);
@@ -47,6 +50,8 @@ $(document).ready(function(){
 			$('#closeBtn').on('click', function(e){
 				$(handle).animate({'left': '50vw', 'top': '50%'}, 1500, function(){
 				$('.bottom, .top').css('display', 'block');
+				$('.right-text, .left-text').css('display', 'none');
+				$('.right-text, .left-text').removeClass('animated slideInRight slideInLeft');
 			});
 				// $(topLayer).animate({'width': 100+'vw'}, 1500);
 				  $('.skewed .top').animate({'width': width}, 1500);
@@ -59,6 +64,7 @@ $(document).ready(function(){
 				$(btnLeft2).on('click', function(e){
 			$(handle2).animate({'left': 2374}, 1500);
 			$(topLayer2).animate({'width': 3375}, 1500, function(){
+					$('.right-text').css('display', 'block');
 					
 			});
 			$('#closeBtn2').css({'display': 'block'});
@@ -69,7 +75,8 @@ $(document).ready(function(){
 		$(btnRight2).on('click', function(e){
 			$(handle2).animate({'left': -334}, 1500);
 			$(topLayer2).animate({'width': 666.5}, 1500, function(){
-
+				$('.left-text').css('display', 'block');
+				
 			});
 			$('#closeBtn2').css({'display': 'block'});
 			$('#closeBtn2').animate({'opacity': 1}, 1000);
@@ -79,6 +86,8 @@ $(document).ready(function(){
 			$('#closeBtn2').on('click', function(e){
 				$(handle2).animate({'left': '50vw', 'top': '50%'}, 1500, function(){
 				$('.bottom, .top').css('display', 'block');
+				$('.right-text, .left-text').css('display', 'none');
+				
 			});
 				// $(topLayer).animate({'width': 100+'vw'}, 1500);
 				  $('.skewed .top').animate({'width': width}, 1500);

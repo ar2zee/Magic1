@@ -1,44 +1,42 @@
+input, textarea {
+   color: #000 !important;
+}
+label {
+   color: #861C14 !important;
+}
 
+.input-field .prefix {
+   color: #861C14;
+}
 
 .form-container {
    border: 5px solid #f2e3d2;
-   background: #c9b7a2;
-   background: -webkit-gradient(linear, left top, left bottom, from(#c79865), to(#c9b7a2));
-   background: -webkit-linear-gradient(top, #c79865, #c9b7a2);
-   background: -moz-linear-gradient(top, #c79865, #c9b7a2);
-   background: -ms-linear-gradient(top, #c79865, #c9b7a2);
-   background: -o-linear-gradient(top, #c79865, #c9b7a2);
-   background-image: -ms-linear-gradient(top, #c79865 0%, #c9b7a2 100%);
-   -webkit-border-radius: 30px;
-   -moz-border-radius: 30px;
-   border-radius: 30px;
-   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
-   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   background: #fff;
+   
    text-decoration: none;
    vertical-align: middle;
-   min-width:300px;
+   max-width:600px;
    padding:20px;
-   width:300px;
+   width:100%;
+   overflow: auto;
+   max-height: 700px;
+   height: 100%;
+   padding-bottom: 10px;
    }
 .form-field {
-   border: 5px solid #c9b7a2;
-   background: #e4d5c3;
+   border: 1px solid #263238;
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px;
    border-radius: 15px;
-   color: #c9b7a2;
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   color: #c62828;
+
    padding:8px;
    margin-bottom:20px;
-   width:250px;
+   
    }
 .form-field:focus {
    background: #fff;
-   color: #725129;
+   color: #d50000;
    }
 .form-container h2 {
    text-shadow: #755c3d 0 1px 0;
@@ -49,7 +47,7 @@
     }
 .form-title {
    margin-bottom:10px;
-   color: #725129;
+   color: #d50000;
    text-shadow: #755c3d 0 1px 0;
    }
 .submit-container {
@@ -57,21 +55,10 @@
    text-align:right;
    }
 .submit-button {
-   border: 5px solid #447314;
-   background: #6aa436;
-   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
-   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
-   background: -moz-linear-gradient(top, #8dc059, #6aa436);
-   background: -ms-linear-gradient(top, #8dc059, #6aa436);
-   background: -o-linear-gradient(top, #8dc059, #6aa436);
-   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
-   -webkit-border-radius: 18px;
-   -moz-border-radius: 18px;
-   border-radius: 18px;
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   text-shadow: #93cc5a 0 1px 0;
+   
+   background: #861C14;
+  
+   text-shadow: #861C14 0 1px 0;
    color: #31540c;
    font-family: helvetica, serif;
    padding: 8.5px 18px;
@@ -79,28 +66,12 @@
    text-decoration: none;
    vertical-align: middle;
    }
-.submit-button:hover {
-   border: 5px solid #447314;
-   text-shadow: #31540c 0 1px 0;
-   background: #6aa436;
-   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
-   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
-   background: -moz-linear-gradient(top, #8dc059, #6aa436);
-   background: -ms-linear-gradient(top, #8dc059, #6aa436);
-   background: -o-linear-gradient(top, #8dc059, #6aa436);
-   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
-   color: #fff;
-   }
+
 .submit-button:active {
    text-shadow: #31540c 0 1px 0;
    border: 5px solid #447314;
    background: #8dc059;
-   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
-   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
-   background: -moz-linear-gradient(top, #6aa436, #8dc059);
-   background: -ms-linear-gradient(top, #6aa436, #8dc059);
-   background: -o-linear-gradient(top, #6aa436, #8dc059);
-   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+
    color: #fff;
    }
 

@@ -5,7 +5,8 @@
 	<title>Magic 1</title>
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--endbuild-->
 </head>
@@ -20,40 +21,48 @@
 <!-- END OF PRELOADER -->
 
 <!-- NAVBAR  -->
-    <div class="navbar-fixed">
+    <header class="navbar-fixed">
 	<nav>
         <div class="nav-wrapper nav-bgcolor ">
           <a href="#!" class="brand-logo logo-image"><img src="images/M1.png" alt="Company logo"></a>
           <a href="#" data-activates="mobile-demo" class="button-collapse">
           	<i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact US</a></li>
+            <li><a href="#number_1">Home</a></li>
+            <li><a href="#wrapper">About</a></li>
+            <li><a href="#number_2">Services</a></li>
+            <li><a href="#wrapper2">Contact US</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact US</a></li>
+            <li><a href="#number_1">Home</a></li>
+            <li><a href="#wrapper">About</a></li>
+            <li><a href="#number_2">Services</a></li>
+            <li><a href="#wrapper2">Contact US</a></li>
           </ul>
         </div>
       </nav>
-  </div>
+  </header>
 	<!-- END OF NAVBAR -->
 <!-- END OFNAVBAR  -->				
-
+<main>
 <!-- SECTION #1 -->
+
     
-    <section  class="section1 bgcolor">
+    
+    <section id="number_1"  class="section1 bgcolor">
 	<div class="window-height" id="particles-js">
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
 					<img class="center-element center white-text" src="images/M1.png" />
 				</div>
+
 			</div>
+            <div>
+             <div class="mouse"></div>
+            <p class="flow-text text-white scroll-text-animation">Scroll</p>   
+            </div>
+            
 		</div>
 	</div>
     </section>
@@ -115,20 +124,20 @@
 
 
 <!-- SECTION #3 -->
-    <section class=" window-height section3">
+    <section id="number_2" class=" window-height section3">
         
         <div class="row">
 
             <!-- Icon #1 -->
             <a class="modal-trigger col s3" href="#modal1">	 
                 <img class="" src="images/svg/emergency.svg" alt="emergency">
-                <span class="hover-visible text-darken-2 red-text">Quick Emergency Response</span>
+                <span class="hover-visible text-darken-2 black-text">Quick Emergency Response</span>
                 </a>
                 <div id="modal1" class="modal ">
                     <div class="modal-content">
                        <img class="col s4" src="images/svg/emergency.svg" alt="emergency">
                         <div class="col s8">
-                        <h4 class="center">Quick Emergency Response</h4>
+                        <h4 class="center red-text">Quick Emergency Response</h4>
                         <p>By responding to the customer’s call as quickly as possible, we are able to keep losses at a minimum. This reduces both damage to the customer and cost of the subsequent claim.</p>
 
                         <h5>Advanced Equipment</h5>
@@ -148,13 +157,13 @@
             <!-- Icon #2 -->
             <a class="modal-trigger col s3" href="#modal2">
             	<img class="" src="images/svg/flood.svg" alt="flood">
-                <span class="hover-visible text-darken-2 red-text">Water and Flood Restoration</span>
+                <span class="hover-visible text-darken-2 black-text">Water and Flood Restoration</span>
                 </a>
                 <div id="modal2" class="modal ">
         	    <div class="modal-content">
         	    	<img class="col s4" src="images/svg/flood.svg" alt="flood">
                         <div class="col s8">
-                        <h4 class="center">Water and Flood Restoration</h4>
+                        <h4 class="center red-text">Water and Flood Restoration</h4>
                         <h5>Water and Flood Restoration Services</h5>
                         <p>Magic One Services knows that water and flood damage are unforeseen catastrophes that call for immediate attention. We at understand that you may have been caught unprepared to respond, when recovering your losses is critically important.</p>
                         <p>Speed is of the essence, because mold, mildew and other microorganisms start to build up in the presence of water. Hence, we have an emergency team ready to come to your assistance as soon as you need us. Our emergency crew is THE one-stop water damage treatment company that can respond to your needs 24 hours a day, 7 days a week.
@@ -185,13 +194,13 @@
             <!-- Icon #3 -->
             <a class="modal-trigger col s3" href="#modal3">
                 <img class="" src="images/svg/insurance-help.svg" alt="insurance-help">
-                <span class="hover-visible text-darken-2 red-text">Insurance Assistance</span>
+                <span class="hover-visible text-darken-2 black-text">Insurance Assistance</span>
                 </a>
                 <div id="modal3" class="modal ">
                 <div class="modal-content">
                         <img class="col s4" src="images/svg/insurance-help.svg" alt="insurance-help">
                         <div class="col s8">
-                        <h4 class="center">Insurance Assistance</h4>
+                        <h4 class="center red-text">Insurance Assistance</h4>
                         <h5>Business and Homeowners</h5>
                         <p>There are numerous benefits in selecting a service provider that has been accepted by your insurance company. Chances are, your insurance provider has carefully reviewed and screened this contractor for you. Business history, company and technician certifications, equipment reviews and employee background checks may be included in this process.</p>
                         <p>Contractors working with insurance companies will usually maintain a higher level of customer service and professionalism. Not only is your satisfaction of the utmost priority, but also the satisfaction of your insurance provider. Magic One can assist you throughout the process, enabling your home to be restored in a quick and efficient manner.</p>
@@ -203,13 +212,13 @@
             <!-- Icon #2 -->
             <a class="modal-trigger col s3" href="#modal4">
                 <img class="" src="images/svg/mold.svg" alt="mold">
-                <span class="hover-visible text-darken-2 red-text">Mold Mitigation and Remediation</span>
+                <span class="hover-visible text-darken-2 black-text">Mold Mitigation and Remediation</span>
                 </a>
                 <div id="modal4" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/mold.svg" alt="mold">
                         <div class="col s8">
-                        <h4 class="center">Mold Mitigation and Remediation</h4>
+                        <h4 class="center red-text">Mold Mitigation and Remediation</h4>
                         <p>Magic One Services and its personnel have extensive experience performing mold remediation projects. Mold Removal is a big part of our business to help our clients get their homes or offices back in the original state. We have a proven record of on-time delivery with minimal disruption to ongoing activities at our clients’ facilities. Our professionals handle water damages every day. Timely action is required to prevent new mold growth. If your property has sustained recent water damage, it is vital to have the water removed and the structure dried promptly.</p>
                         <h5>Specific Mold Remediation Services Include:</h5>
                         <ul>
@@ -240,13 +249,13 @@
             <!-- Icon #1 -->
             <a class="modal-trigger col s3" href="#modal5">     
                 <img class="" src="images/svg/Mop.svg" alt="Mop">
-                <span class="hover-visible text-darken-2 red-text">Specialized Cleaning</span>
+                <span class="hover-visible text-darken-2 black-text">Specialized Cleaning</span>
                 </a>
                 <div id="modal5" class="modal ">
                     <div class="modal-content">
                        <img class="col s4" src="images/svg/Mop.svg" alt="Mop">
                         <div class="col s8">
-                        <h4 class="center">Specialized Cleaning</h4>
+                        <h4 class="center red-text">Specialized Cleaning</h4>
                         <p>We understand that every customer has particular needs and requirements when it comes to their cleaning and that’s why we are always glad to create a customized cleaning plans. Below is a list of special requests that can be part of your customized cleaning plan, for an additional rate.</p>
                         <ul>
                             <br>
@@ -320,13 +329,13 @@
             <!-- Icon #2 -->
             <a class="modal-trigger col s3" href="#modal6">
                 <img class="" src="images/svg/paint-roller.svg" alt="paint-roller">
-                <span class="hover-visible text-darken-2 red-text">Painting and More</span>
+                <span class="hover-visible text-darken-2 black-text">Painting and More</span>
                 </a>
                 <div id="modal6" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/paint-roller.svg" alt="paint-roller">
                         <div class="col s8">
-                        <h4 class="center">Painting and More</h4>
+                        <h4 class="center red-text">Painting and More</h4>
                         <p>At Magic One Services, we take pride in our quality painting services and it shows in our finished product. Our painting technicians use only the best ingredients for a job built to last. When it comes to durability, reliability, and protection for your best investment, you can count on our extensive product knowledge to find and deliver the durable solution to your problem.</p>
                         <br>
                         <h5>Painting Services:</h5>
@@ -363,13 +372,13 @@
             <!-- Icon #7 -->
             <a class="modal-trigger col s3" href="#modal7">
                 <img class="" src="images/svg/pressure.svg" alt="pressure">
-                <span class="hover-visible text-darken-2 red-text">Pressure Washing Services</span>
+                <span class="hover-visible text-darken-2 black-text">Pressure Washing Services</span>
                 </a>
                 <div id="modal7" class="modal ">
                 <div class="modal-content">
                         <img class="col s4" src="images/svg/pressure.svg" alt="pressure">
                         <div class="col s8">
-                        <h4 class="center">Pressure Washing Services</h4>
+                        <h4 class="center red-text">Pressure Washing Services</h4>
                         <p>Pressure washing is a key element in maintaining and restoring the beauty of your home and business. At Magic One, we provide the highest quality services for your dollars spent. We use only the highest caliber pressure washing equipment and cleaning chemicals. </p>
                         <br>
                         <p>Magic One specializes in Pressure Washing for Industrial, Commercial, and Residential buildings in the New Orleans areas. Our staff is committed to providing a professional five-star cleaning services at an affordable price. We come to your location equipped with all the supplies needed to get the job done right the first time. One-time, weekly, bi-weekly, and monthly service is available.</p>
@@ -427,13 +436,13 @@
             <!-- Icon #2 -->
             <a class="modal-trigger col s3" href="#modal8">
                 <img class="" src="images/svg/rental.svg" alt="rental">
-                <span class="hover-visible text-darken-2 red-text">Resale Rental Ready Program</span>
+                <span class="hover-visible text-darken-2 black-text">Resale Rental Ready Program</span>
                 </a>
                 <div id="modal8" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/rental.svg" alt="rental">
                         <div class="col s8">
-                        <h4 class="center">Resale Rental Ready Program</h4>
+                        <h4 class="center red-text">Resale Rental Ready Program</h4>
                         <p>Magic One Services also provides a Resale Rental Ready program!</p>
                         <br>
                         <p>The Resale / Rental Ready program is specifically designed to make the preparation for selling or renting a home or space carefree for you. We are able to come in and get everything ready for you. You simple give us access to the home or spaces and the next time you see them they are ready.</p>
@@ -455,13 +464,13 @@
 
              <a class="modal-trigger col s3" href="#modal9">
                 <img class="" src="images/svg/moving.svg" alt="moving">
-                <span class="hover-visible text-darken-2 red-text">Move In/Move Out Mass Cleanings</span>
+                <span class="hover-visible text-darken-2 black-text">Move In/Move Out Mass Cleanings</span>
                 </a>
                 <div id="modal9" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/moving.svg" alt="moving">
                         <div class="col s8">
-                        <h4 class="center">Move In/Move Out Mass Cleanings </h4>
+                        <h4 class="center red-text">Move In/Move Out Mass Cleanings </h4>
                         <p>Magic One Services will remove all those cleaning hassles, which you just don’t need when moving from house to house or apartment to apartment.
                         Our move in/out cleaning is carried out by our dedicated mobile teams of cleaning operatives whose specialty are properties in need of a thorough deep. Our teams are equipped with all the necessary chemicals, tools and equipment.</p>  <br>
                         <p>We understand how important it is for you to have the property professionally cleaned and checked. Our expert attention will make moving in just that much more pleasant. 
@@ -473,13 +482,13 @@
 
                 <a class="modal-trigger col s3" href="#modal10">
                 <img class="" src="images/svg/build.svg" alt="build">
-                <span class="hover-visible text-darken-2 red-text">Build</span>
+                <span class="hover-visible text-darken-2 black-text">Build</span>
                 </a>
                 <div id="modal10" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/build.svg" alt="build">
                         <div class="col s8">
-                        <h4 class="center">Build</h4>
+                        <h4 class="center red-text">Build</h4>
                         <p>EMPTY</p>
                     </div>
                 </div>
@@ -487,13 +496,13 @@
 
                 <a class="modal-trigger col s3" href="#modal11">
                 <img class="" src="images/svg/commercial.svg" alt="commercial">
-                <span class="hover-visible text-darken-2 red-text">Commercial Cleaning</span>
+                <span class="hover-visible text-darken-2 black-text">Commercial Cleaning</span>
                 </a>
                 <div id="modal11" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/commercial.svg" alt="commercial">
                         <div class="col s8">
-                        <h4 class="center">Commercial Cleaning</h4>
+                        <h4 class="center red-text">Commercial Cleaning</h4>
                         <p>Magic One Services provides cleaning and support services to various commercial properties all over Louisiana. Our office cleaning is tailored according to each client’s requirements.</p> <br>
                         <p>Presenting a clean business environment is vital to impressing your clients and customers and improving morale among your employees. Our expert cleaning staff will provide your company with a stress-free way of maintaining a professional atmosphere day after day. We do the work, so you can concentrate on your business. </p> <br>
                         <p>From general cleaning one a week to taking care of the whole building maintenance including daily cleaning, carpet and hardwood floor care, deep cleaning and janitorial supplies, we offer expert cleaning solutions for businesses of any size. </p> <br>
@@ -526,13 +535,13 @@
 
                  <a class="modal-trigger col s3" href="#modal12">
                 <img class="" src="images/svg/residential.svg" alt="residential">
-                <span class="hover-visible text-darken-2 red-text">Residential Cleaning</span>
+                <span class="hover-visible text-darken-2 black-text">Residential Cleaning</span>
                 </a>
                 <div id="modal12" class="modal ">
                 <div class="modal-content">
                     <img class="col s4" src="images/svg/residential.svg" alt="residential">
                         <div class="col s8">
-                        <h4 class="center">Residential Cleaning </h4>
+                        <h4 class="center red-text">Residential Cleaning </h4>
                         <p>Magic One Services has been in business since 2000 and we currently service thousands of clients who have entrusted us with taking care of their cleaning needs. Whether you need weekly, bi-weekly or one-time cleaning, your home will be cleaned to your highest expectations by trained professionals at surprisingly affordable rates.</p> <br>
                         <p>In order to satisfy everybody’s requirements, we offer two types of domestic cleaning services:</p>
                         <br>
@@ -554,13 +563,157 @@
             <div class="layer bottom">
                 <div class="content-wrap">
                     <div class="content-body">
-                        <h1 class="red-text">OUR ADRESSES</h1>
-                       <p>Lorem ipsum dolor sit amet.</p>
+                        <h1 class="red-text">SCHEDULE NOW</h1>
+                       <p>Let us be your one stop shop for all of your residential and commercial needs.</p>
                     </div>
-                <div class="content-body left-text">                    
-                    <p>At Magic One Services, your satisfaction is our priority. A New Orleans based leader in providing full services to fulfill your entire residential and commercial needs, Magic One has become a one-stop-shop and industry leader in the NOLA Metropolitan area for our time-tested expertise in providing top quality cleaning and maintenance services. We strive to provide the expert services most suited to each client’s needs. Our goal is to establish lasting relationships with our clients by exceeding their expectations and earning their trust. 
-                    In addition, we only use the latest in technical equipment that demonstrate the highest quality results and safety standards that our clients   deserve. The Magic One team is composed of motivated and well-trained professionals with an expertise in managing each case of your project.
-                    </p>
+                <div class="content-body left-text">  
+
+                    <form class="form-container" id=get_a_quote>
+                         <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                  <input  id="full_name" type="text" class="validate">
+                                  <label for="full_name">Full Name</label>
+                                </div>
+
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                  <input id="phone" type="tel" class="validate">
+                                  <label  for="phone">Phone</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                  <input id="email" type="email" class="validate">
+                                  <label data-error="wrong" data-success="right" for="email">Email</label>
+                                </div>
+                              </div>
+                                <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">location_on</i>
+                                  <input id="location" type="text" >
+                                  <label for="location">Street Adress</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                  <input id="location2" type="text" >
+                                  <label for="location2">Adress line 2 </label>
+                                </div>
+                                
+                              </div>
+                                <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">location_city</i>
+                                  <input id="city" type="text" >
+                                  <label  for="city">City</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    
+                                  <input id="state" type="text" >
+                                  <label  for="state">State</label>
+                                </div>
+                              </div>
+                               <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="zip_code" type="text" >
+                                  <label  for="zip_code">Zip code</label>
+                                </div>
+                              </div>
+                             <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">mode_edit</i>
+                                  <textarea id="comments" class="materialize-textarea"></textarea>
+                                  <label for="comments">Comments, Questions or Concerns:</label>
+                                </div>
+                              </div>
+                              <div class="input-field col s12">
+                                <select multiple>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">Residential Cleaning</option>
+                                  <option value="2">Pet/Smoke Odor Removal</option>
+                                  <option value="3">Water &amp; Flood Restoration</option>
+                                  <option value="3">Make Ready Services</option>
+                                  <option value="3">Carpet/Rug/Upholstery Cleaning</option>
+                                  <option value="3">Commercial Cleaning</option>
+                                  <option value="3">Painting &amp; Drywall</option>
+                                  <option value="3">Pressure Washing</option>
+                                  <option value="3">Lawn Care</option>
+                                  <option value="3">Tile &amp; Grout Cleaning</option>
+                                </select>
+                                <label>Services Requested:</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <select multiple>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">House</option>
+                                  <option value="2">Office</option>
+                                  <option value="3">Building</option>
+                                  <option value="3">Apartment</option>
+                                  <option value="3">Condo</option>
+                                </select>
+                                <label>What type of dwelling?</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <select multiple>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">Carpet</option>
+                                  <option value="2">Wood</option>
+                                  <option value="3">Tile</option>
+                                  <option value="3">Concrete</option>
+                                  <option value="3">Other</option>
+                                </select>
+                                <label>What type of floors do you have?</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <select multiple>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">Living area</option>
+                                  <option value="2">Bedrooms</option>
+                                  <option value="3">Kitchen/Dining area</option>
+                                  <option value="3">Bathroom</option>
+                                  <option value="3">Other</option>
+                                </select>
+                                <label>What is your main focus area?</label>
+                              </div>
+                               <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                </select>
+                                <label>How Many Bedrooms?</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                                <label>How Many Bathrooms?</label>
+                              </div>
+                                    <div class="input-field col s12">
+                                    <i class="material-icons prefix">date_range</i>
+                                   <input type="text" class="datepicker" id="date">
+                                  <label for="date">Date you would like  to come out and  estimate:</label>
+                                </div>
+                                <div class="submit-container">
+                                <input class="submit-button" type="submit" value="Submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+
                 </div>
                     <a href="javascript:void();" id="button_right2">
                     <img src="images/svg/contactbw-01.svg">
@@ -589,20 +742,20 @@
             </div>
                 <div class="content-body right-text">
 
-                    <form class="form-container">
+                    <form class="form-container" id="contact_us">
                     <div class="form-title"><h2>Contact With Us</h2></div>
                     <div class="form-title">Name</div>
                     <input class="form-field" type="text" name="firstname" /><br />
                     <div class="form-title">Email</div>
                     <input class="form-field" type="email" name="email" /><br />
                     <div class="form-title">Phone</div>
-                    <input class="form-field" type="phone" name="phone" /><br />
+                    <input class="form-field" type="tel" name="phone" /><br />
                     <div class="form-title">Company Name</div>
                     <input class="form-field" type="text" name="Company Name" /><br />
                     <div class="form-title">Subject</div>
                     <input class="form-field" type="text" name="subject" /><br />
                     <div class="form-title">Detail</div>
-                    <textarea class="form-field" type="text" name="detail" ></textarea><br />
+                    <textarea class="form-field"  name="detail" ></textarea><br />
                     <div class="submit-container">
                     <input class="submit-button" type="submit" value="Submit" />
                     </div>
@@ -622,9 +775,18 @@
 
             <div id="map"></div>
 
+    </main>
 
-
-
+ <footer class="page-footer  nav-bgcolor">
+            <div class="container">
+         <span id="current_year"></span> <a target="_blank" href="http://www.marqetgroup.com/">Marqet Group</a> <svg class="heart" viewBox="0 0 32 29.6">
+  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+</svg>
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          
+        </footer>
 
 
 
@@ -641,7 +803,7 @@
 	<script src="js/lib/particles.js"></script>
 	<script src="js/modules/buttonSlider.js"></script>
 	<script src="js/main.js"></script>
-
+    <script src="js/modules/explosion_animation.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIQ4HCU6pW-lE823H0AeCmN4soA5gpB8A&callback=initMap" async defer></script>   
 
 	<!-- endbuild -->

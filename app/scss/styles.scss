@@ -5,6 +5,10 @@
 @import './section-2-style.scss';
 @import './section-3-style.scss';
 @import './form-styles.scss';
+@import './mousescrollanimationbutton.scss';
+@import './footer-style.scss';
+
+
 
 
 .section1, .section2, .section3, .section4, .section4 ,.section5{
@@ -17,6 +21,7 @@
  margin: 0;
  padding: 0;
  outline: none;
+ font-family: 'Superclarendon-Regular';
 }
 
 h1 {
@@ -46,12 +51,13 @@ h1 {
 nav{ 
 	.brand-logo {
 			padding-left: 5% ;
-
+			opacity: 0;
 			img {
 				max-width: 140px;
 				width: 100%;
 				max-height: 64px;
 				height: 10vh;
+
 			}
 	}
 	.hide-on-med-and-down{
@@ -76,37 +82,10 @@ nav{
 	height: 100vh;
 }
 
-.col.s3 img {
-	height: 70%;
-	width: 50%;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-}
 
-.modal-trigger {
-	position: relative;
-}
 
-.hover-visible {
-    display: none;
-    position: absolute;
-	right: 0;
-	left: 0;
-	margin-left: auto;
-	margin-right: auto;
-	bottom: 2%;
+#number_2 .col.s8 {
 	text-align: center;
-	font-weight: 500;
-
-}
-
-a.modal-trigger:hover > span.hover-visible {
-    display: block;
-    
 }
 
 

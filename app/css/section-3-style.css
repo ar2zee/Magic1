@@ -3,8 +3,38 @@
   border-radius: 20px;
   height: 33.33vh; }
   .section3 .col.s3:hover {
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.4); }
+    transform: scale(1.1);
+    font-size: 15px; }
+
+.section3 .col.s3 img {
+  height: 70%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.section3 .modal-trigger {
+  position: relative; }
+
+.section3 a.modal-trigger:hover > span.hover-visible {
+  display: block; }
+
+.section3 .modal-content p:last-child, .section3 li:last-child {
+  padding-bottom: 50px; }
+
+.section3 .hover-visible {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5%;
+  text-align: center;
+  font-weight: 500; }
 
 .section3 .row {
   margin: 0; }

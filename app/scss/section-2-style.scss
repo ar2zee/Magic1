@@ -41,7 +41,7 @@
 }
 
 .layer h1{
-  font-size:2em;
+  font-size: 4em;
 }
 
 .bottom{
@@ -53,9 +53,6 @@
   right:5%;
 }
 
-.left-text{
-  left:5%;
-}
 
 .top{
   background:#eee;
@@ -72,7 +69,18 @@
 .right-text {
   right: 5%;
   left: unset !important;
+  text-align: left !important;
 }
+
+.left-text {
+  left:5%;
+  text-align: left !important;
+}
+
+.right-text, .left-text {
+  display: none;
+}
+
 
 .handle{
   position: absolute;
