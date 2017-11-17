@@ -27,7 +27,7 @@ $(document).ready(function(){
 		$(btnLeft).on('click', function(e){
 			$(handle).animate({'left': 2374}, 1500);
 			$(topLayer).animate({'width': 3375}, 1500, function(){
-					$('.right-text').css({'display': 'block', 'top': '40%'});
+					$('#wrapper .right-text').css({'display': 'block', 'top': '10%'});
 					$('.right-text ').addClass('animated slideInLeft');
 					
 			});
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		$(btnRight).on('click', function(e){
 			$(handle).animate({'left': -334}, 1500);
 			$(topLayer).animate({'width': 666.5}, 1500, function(){
-				$('.left-text').css({'display': 'block', 'top': '40%'});
+				$('#wrapper .left-text').css({'display': 'block', 'top': '10%'});
 				$('.left-text ').addClass('animated slideInRight');
 			});
 			$('#closeBtn').css({'display': 'block'});

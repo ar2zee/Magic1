@@ -11,6 +11,19 @@
 		}
 	}
 
+	#number_2 .col.s8 {
+		text-align: left;
+	}
+	
+	ul::before, li::before {
+	content: "•";
+	color: red;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em
+	}
+}
+
 	.col.s3 img {
 	height: 70%;
 	width: 50%;
@@ -45,6 +58,8 @@
 	top: 5%;
 	text-align: center;
 	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 22px !important;
 }
 
 	.row {
